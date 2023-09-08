@@ -25,7 +25,12 @@ def is_balanced(expression):
 
 
 def remove_duplicates(sequence):
-    pass
-
+    list_content = []
+    for item in sequence:
+        if item not in list_content:
+            list_content.append(item)
+    return list_content        
+        
+sequence1 = [2, 3, 2, 4, 5, 3, 6, 7, 5]
 
 ipdb.set_trace()
